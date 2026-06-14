@@ -2,7 +2,8 @@
   --max-width: 720px;
   --text: #1a1a1a;
   --muted: #5c5c5c;
-  --accent: #1a1a1a;
+  --accent: #2563eb;
+  --accent-dark: #1d4ed8;
   --border: #e6e6e6;
   --bg: #ffffff;
 }
@@ -37,6 +38,7 @@ body {
 
 /* Header / nav */
 .site-header {
+  border-top: 3px solid var(--accent);
   border-bottom: 1px solid var(--border);
 }
 
@@ -71,7 +73,7 @@ body {
 
 .site-nav a:hover,
 .site-nav a:focus {
-  color: var(--text);
+  color: var(--accent);
 }
 
 /* Main */
@@ -89,7 +91,8 @@ h1 {
 
 .tagline {
   font-size: 20px;
-  color: var(--muted);
+  color: var(--accent);
+  font-weight: 500;
   margin: 0 0 28px;
 }
 
@@ -117,6 +120,18 @@ a {
 .site-footer .container {
   padding-top: 24px;
   padding-bottom: 24px;
+}
+
+.site-footer p {
+  margin: 0 0 4px;
+}
+
+.site-footer p:last-child {
+  margin-bottom: 0;
+}
+
+.heart {
+  color: #e0245e;
 }
 
 @media (max-width: 480px) {
